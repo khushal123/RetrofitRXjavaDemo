@@ -10,6 +10,6 @@ import retrofit2.http.GET;
 
 public interface ApiInterface {
     @GET(Api.repo_url)
-    Single<List<GitHubResponse>> getData();
+    io.reactivex.Observable<List<GitHubResponse>> getData();
 
 }
